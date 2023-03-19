@@ -1,0 +1,11 @@
+[
+    {
+        "producto": "Cat Chow",
+        "categoria": "Gato",
+        "subCategoria": "Adulto",
+        "pesoBolsa": 10,
+        "precio": 100, 
+        "stockBolsa": 10,
+        "stockSuelto": 10
+    }
+]

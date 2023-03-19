@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head") %> 
+<body>
+    <%- include("./partials/navbar") %>
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <h1>Lista de productos</h1>
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th>Producto</th>
+                              <th>Categoria</th>
+                              <th>Sub Categoria</th>
+                              <th>Peso Bolsa</th>
+                              <th>Precio Kg</th>
+                              <th>Precio Bolsa</th>
+                              <th>Stock Suelto</th>
+                              <th>Stock Bolsa</th>
+                              <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for (let i = 0; i < productos.length; i++) { %>
+                                <tr>
+                                    <td><%= productos[i].producto %></td>
+                                    <td><%= productos[i].categoria %></td>
+                                    <td><%= productos[i].subCategoria %></td>
+                                    <td><%= productos[i].pesoBolsa %> kg</td>
+                                    <td>$<%= productos[i].precio * 1.4 / productos[i].pesoBolsa %></td>
+                                    <td>$<%= productos[i].precio * 1.3 %></td>
+                                    <td><%= productos[i].stockSuelto %> kg</td>
+                                    <td><%= productos[i].stockBolsa %> kg</td>
+                                    <td>
+                                        <a href="/productos/editar/<%= productos[i].id %>" class="btn btn-warning">Editar</a>
+                                        <a href="/productos/eliminar/<%= productos[i].id %>" class="btn btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                            <% } %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>

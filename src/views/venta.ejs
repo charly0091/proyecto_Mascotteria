@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head") %>
+<body>
+    <%- include("./partials/navbar") %>
+   
+    <!-- formulario venta -->
+    <form action="/venta" method="POST">
+    <div class="container">
+        <div class="row">
+            <h1>Formulario de venta</h1>
+            <div class="col-3">
+                <label for="categoria">Animal</label>
+                <select class="form-select " aria-label="Default select example" name="categoria" id="animal">
+                    <option selected>Seleccionar categoria</option>
+                    <% for (let i = 0; i < animal.length; i++) { %>
+                        <option value="<%= animal[i] %>"><%= animal[i] %></option>
+                    <% } %>
+                </select>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="mb-3 col-6 ">
+                <label for="producto" class="form-label">Producto</label>
+                <select class="form-select" aria-label="Default select example" name="producto" id="producto">
+                    <option selected>Seleccionar producto</option>
+                    <% for (let i = 0; i < productos.length; i++) { %>
+                        <option value="<%= productos[i].id %>"><%= productos[i].producto %></option>
+                    <% } %>
+                </select>
+            </div>
+            <div class="mb-3 col-6 ">
+                <label for="nombre" class="form-label">Nombre</label>
+                <select class="form-select" aria-label="Default select example" name="nombre" id="nombre" disabled>
+                    <option selected>Seleccionar producto</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="mb-3 col-6">
+            <label for="tipo" class="form-label">Bolsa o suelto</label>
+            <select class="form-select" aria-label="Default select example" name="tipo">
+                <option selected>Seleccionar tipo</option>
+                <option value="bolsa">Bolsa</option>
+                <option value="suelto">Suelto</option>
+            </select>
+        </div>
+                    <div class="mb-3 col-5">
+                        <label for="cantidad" class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" id="cantidad" name="cantidad">
+                    </div>
+                    <div class="mb-3 col-5">
+                        <label for="precio" class="form-label">Precio</label>
+                        <input type="number" class="form-control" id="precio" name="precio">
+                    </div>
+                    <div class="mb-3 col-5">
+                        <label for="fecha" class="form-label">Fecha</label>
+                        <input type="date" class="form-control" id="fecha" name="fecha">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+        </div>
+    </div>
+    <script src="/js/menu.js"></script>
+</body>
+</html>
