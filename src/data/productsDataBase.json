@@ -1,9 +1,70 @@
 [
     {
-        "producto": "Cat Chow",
+        "id": 1,
+        "producto": "Agility",
+        "categoria": "Gato",
+        "subCategoria": "Kitten",
+        "pesoBolsa": 10,
+        "precio": 100, 
+        "stockBolsa": 10,
+        "stockSuelto": 10
+    },
+    {
+        "id": 2,
+        "producto": "Agility",
         "categoria": "Gato",
         "subCategoria": "Adulto",
         "pesoBolsa": 10,
+        "precio": 100, 
+        "stockBolsa": 10,
+        "stockSuelto": 10
+    },
+    {
+        "id": 3,
+        "producto": "Agility",
+        "categoria": "Gato",
+        "subCategoria": "Urinary",
+        "pesoBolsa": 10,
+        "precio": 100, 
+        "stockBolsa": 10,
+        "stockSuelto": 10
+    },
+    {
+        "id": 4,
+        "producto": "Agility",
+        "categoria": "Gato",
+        "subCategoria": "Reduccion de peso",
+        "pesoBolsa": 10,
+        "precio": 100, 
+        "stockBolsa": 10,
+        "stockSuelto": 10
+    },
+    {
+        "id": 5,
+        "producto": "Cat Chow",
+        "categoria": "Gato",
+        "subCategoria": "Gatitos Carne y Pollo",
+        "pesoBolsa": 8,
+        "precio": 100, 
+        "stockBolsa": 10,
+        "stockSuelto": 10
+    },
+    {
+        "id": 6,
+        "producto": "Cat Chow",
+        "categoria": "Gato",
+        "subCategoria": "Adulto Carne y Pollo",
+        "pesoBolsa": 15,
+        "precio": 100, 
+        "stockBolsa": 10,
+        "stockSuelto": 10
+    },
+    {
+        "id": 7,
+        "producto": "Cat Chow",
+        "categoria": "Gato",
+        "subCategoria": "Adulto Pescado y Pollo",
+        "pesoBolsa": 15,
         "precio": 100, 
         "stockBolsa": 10,
         "stockSuelto": 10

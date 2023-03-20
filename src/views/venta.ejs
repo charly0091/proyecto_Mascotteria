@@ -22,10 +22,10 @@
         <div class="row ">
             <div class="mb-3 col-6 ">
                 <label for="producto" class="form-label">Producto</label>
-                <select class="form-select" aria-label="Default select example" name="producto" id="producto">
+                <select class="form-select" aria-label="Default select example" name="producto" id="producto" >
                     <option selected>Seleccionar producto</option>
-                    <% for (let i = 0; i < productos.length; i++) { %>
-                        <option value="<%= productos[i].id %>"><%= productos[i].producto %></option>
+                    <% for (let i = 0; i < marcas.length; i++) { %>
+                        <option value="<%= marcas[i] %>"><%= marcas[i] %></option>
                     <% } %>
                 </select>
             </div>
@@ -33,7 +33,7 @@
                 <label for="nombre" class="form-label">Nombre</label>
                 <select class="form-select" aria-label="Default select example" name="nombre" id="nombre" disabled>
                     <option selected>Seleccionar producto</option>
-
+                    <option value="a">asd</option>
                 </select>
             </div>
         </div>
