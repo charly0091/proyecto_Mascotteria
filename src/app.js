@@ -10,9 +10,11 @@ app.set('views', "./src/views");
 
 /* Routers */
 const mainRouter = require('./routes/main');
+const ventaRouter = require('./routes/venta.js');
 
 /* Routers Middlewares */
 app.use('/', mainRouter);
+app.use('/venta', ventaRouter);
 
 app.listen(port, () => {
     console.log(`servidor levantado en http://localhost:${port}`);

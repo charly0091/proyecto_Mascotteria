@@ -11,56 +11,70 @@
             <h1>Formulario de venta</h1>
             <div class="col-3">
                 <label for="categoria">Animal</label>
-                <select class="form-select " aria-label="Default select example" name="categoria" id="animal">
+                <select class="form-select " aria-label="Default select example" name="animal" id="animal">
                     <option selected>Seleccionar categoria</option>
-                    <% for (let i = 0; i < animal.length; i++) { %>
-                        <option value="<%= animal[i] %>"><%= animal[i] %></option>
-                    <% } %>
+                    <option value="Gato">Gato</option>
+                    <option value="Perro">Perro</option>
                 </select>
             </div>
         </div>
         <div class="row ">
             <div class="mb-3 col-6 ">
                 <label for="producto" class="form-label">Producto</label>
-                <select class="form-select" aria-label="Default select example" name="producto" id="producto" >
-                    <option selected>Seleccionar producto</option>
-                    <% for (let i = 0; i < marcas.length; i++) { %>
-                        <option value="<%= marcas[i] %>"><%= marcas[i] %></option>
-                    <% } %>
+                <select class="form-select" aria-label="Default select example" name="marca" id="marca" disabled >
+                    <!-- <option selected>Seleccionar marca</option> -->
                 </select>
             </div>
             <div class="mb-3 col-6 ">
                 <label for="nombre" class="form-label">Nombre</label>
-                <select class="form-select" aria-label="Default select example" name="nombre" id="nombre" disabled>
-                    <option selected>Seleccionar producto</option>
-                    <option value="a">asd</option>
+                <select class="form-select" aria-label="Default select example" name="producto" id="producto" disabled>
                 </select>
             </div>
         </div>
-        <div class="mb-3 col-6">
-            <label for="tipo" class="form-label">Bolsa o suelto</label>
-            <select class="form-select" aria-label="Default select example" name="tipo">
-                <option selected>Seleccionar tipo</option>
-                <option value="bolsa">Bolsa</option>
-                <option value="suelto">Suelto</option>
-            </select>
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="tipo" class="form-label">Bolsa o suelto</label>
+                <select class="form-select" aria-label="Default select example" name="tipo">
+                    <option selected>Seleccionar tipo</option>
+                    <option value="bolsa">Bolsa</option>
+                    <option value="suelto">Suelto</option>
+                </select>
+            </div>
+            <div class="mb-3 col-6">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" id="cantidad" name="cantidad">
+            </div>
         </div>
-                    <div class="mb-3 col-5">
-                        <label for="cantidad" class="form-label">Cantidad</label>
-                        <input type="number" class="form-control" id="cantidad" name="cantidad">
-                    </div>
-                    <div class="mb-3 col-5">
-                        <label for="precio" class="form-label">Precio</label>
-                        <input type="number" class="form-control" id="precio" name="precio">
-                    </div>
-                    <div class="mb-3 col-5">
-                        <label for="fecha" class="form-label">Fecha</label>
-                        <input type="date" class="form-control" id="fecha" name="fecha">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="precio" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="precio" name="precio">
+            </div>
+            <div class="mb-3 col-6">
+                <label for="metodo" class="form-label">Metodo de pago</label>
+                <select class="form-select" aria-label="Default select example" name="metodo">
+                    <option selected>Seleccionar metodo</option>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="dni">Cuenta DNI</option>
+                    <option value="mp">Mercado Pago</option>
+                </select>
+            </div>
         </div>
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="fecha" name="fecha">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
     </div>
-    <script src="/js/menu.js"></script>
+    <script>
+        
+      </script>
+    <script src="/js/menuMarca.js"></script>
+    <script src="/js/productosFiltrados.js"></script>
+    <script src="/js/fecha.js"></script>
 </body>
 </html>
