@@ -10,9 +10,9 @@
                   <table class="table">
                       <thead>
                           <tr>
+                              <th>Aniamal</th>
+                              <th>Marca</th>
                               <th>Producto</th>
-                              <th>Categoria</th>
-                              <th>Sub Categoria</th>
                               <th>Peso Bolsa</th>
                               <th>Precio Kg</th>
                               <th>Precio Bolsa</th>
@@ -24,12 +24,12 @@
                         <tbody>
                             <% for (let i = 0; i < productos.length; i++) { %>
                                 <tr>
+                                    <td><%= productos[i].animal %></td>
+                                    <td><%= productos[i].marca %></td>
                                     <td><%= productos[i].producto %></td>
-                                    <td><%= productos[i].categoria %></td>
-                                    <td><%= productos[i].subCategoria %></td>
                                     <td><%= productos[i].pesoBolsa %> kg</td>
-                                    <td>$<%= productos[i].precio * 1.4 / productos[i].pesoBolsa %></td>
-                                    <td>$<%= productos[i].precio * 1.3 %></td>
+                                    <td>$<%= productos[i].precioKg %></td>
+                                    <td>$<%= productos[i].precioBolsa %></td>
                                     <td><%= productos[i].stockSuelto %> kg</td>
                                     <td><%= productos[i].stockBolsa %> kg</td>
                                     <td>

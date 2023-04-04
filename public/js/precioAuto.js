@@ -1,15 +1,7 @@
 const precioInput = document.getElementById('precio');
 const cantidadInput = document.getElementById('cantidad');
 const tipoInput = document.getElementById('tipo');
-let multiplicador;
 
-tipoInput.addEventListener("change", function(event){
-    if(event.target.value == "bolsa"){
-         multiplicador = 1.3;
-    } else if(event.target.value == "suelto"){
-         multiplicador = 1.4;
-    }
-});
 
 productos.addEventListener("change", function(event){
     const productoFiltrado = event.target.value;
@@ -18,14 +10,25 @@ productos.addEventListener("change", function(event){
             return response.json();
         })
         .then(function(data){
-            precioInput.addEventListener("change", function(event){
-                cantidadInput.value = event.target.value / data.precio / multiplicador;
-            })
-            cantidadInput.addEventListener("change", function(event){
-                precioInput.value = event.target.value * data.precio * multiplicador;
-            })
+            if(tipoInput.value == "suelto"){
+                precioInput.addEventListener("change", function(event){
+                    cantidadInput.value = event.target.value / data.precioKg;
+                })
+                cantidadInput.addEventListener("change", function(event){
+                    precioInput.value = event.target.value * data.precioKg;
+                })
+            } else if(tipoInput.value == "bolsa") {
+                precioInput.addEventListener("change", function(event){
+                    cantidadInput.value = event.target.value / data.precioBolsa;
+                })
+                cantidadInput.addEventListener("change", function(event){
+                    precioInput.value = event.target.value * data.precioBolsa;
+                })
+            }
         })
             .catch(function(error) {
               console.error("Error al cargar los productos:", error);
             });
+
+          
     });

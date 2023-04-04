@@ -5,16 +5,24 @@
     <%- include("./partials/navbar") %>
    
     <!-- formulario venta -->
-    <form action="/venta" method="POST">
+    <form action="/venta/carrito" method="POST">
     <div class="container">
         <div class="row">
             <h1>Formulario de venta</h1>
-            <div class="col-3">
-                <label for="categoria">Animal</label>
+            <div class="mb-3 col-6" >
+                <label for="categoria" class="form-label">Animal</label>
                 <select class="form-select " aria-label="Default select example" name="animal" id="animal">
                     <option selected>Seleccionar categoria</option>
                     <option value="Gato">Gato</option>
                     <option value="Perro">Perro</option>
+                </select>
+            </div>
+            <div class="mb-3 col-6">
+                <label for="tipo" class="form-label">Bolsa o suelto</label>
+                <select class="form-select" aria-label="Default select example" name="tipo" id="tipo">
+                    <option selected>Seleccionar tipo</option>
+                    <option value="bolsa">Bolsa</option>
+                    <option value="suelto">Suelto</option>
                 </select>
             </div>
         </div>
@@ -33,12 +41,8 @@
         </div>
         <div class="row">
             <div class="mb-3 col-6">
-                <label for="tipo" class="form-label">Bolsa o suelto</label>
-                <select class="form-select" aria-label="Default select example" name="tipo" id="tipo">
-                    <option selected>Seleccionar tipo</option>
-                    <option value="bolsa">Bolsa</option>
-                    <option value="suelto">Suelto</option>
-                </select>
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="fecha" name="fecha">
             </div>
             <div class="mb-3 col-6">
                 <label for="cantidad" class="form-label">Cantidad</label>
@@ -61,18 +65,49 @@
                 </select>
             </div>
         </div>
-        <div class="row">
-            <div class="mb-3 col-6">
-                <label for="fecha" class="form-label">Fecha</label>
-                <input type="date" class="form-control" id="fecha" name="fecha">
-            </div>
-        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-primary">Reset</button>
     </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Lista de productos</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Cantidad</th>
+                            <th>Marca</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <% for (let i = 0; i < comprados.length; i++) { %>
+                              <tr>
+                                  <td><%= comprados[i].cantidad %></td>
+                                  <td><%= comprados[i].marca %></td>
+                                  <td><%= comprados[i].producto %></td>
+                                  <td>$ <%= comprados[i].precio %></td>
+                                  <td>
+                                      <a href="/productos/editar/<%= comprados[i].id %>" class="btn btn-warning">Editar</a>
+                                      <a href="/productos/eliminar/<%= comprados[i].id %>" class="btn btn-danger">Eliminar</a>
+                                  </td>
+                              </tr>
+                          <% } %>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+    <div class="my-5">
+      <h3>Carrito de compras</h3>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="cart-total">0</span></p>
+      <form action="/venta/comprar" method="POST">
+          <button id="checkout" class="btn btn-success">Realizar compra</button>
+      </form>
     </div>
-    <script>
-        
-      </script>
+</div>
     <script src="/js/menuMarca.js"></script>
     <script src="/js/productosFiltrados.js"></script>
     <script src="/js/fecha.js"></script>
