@@ -17,5 +17,10 @@ module.exports = {
         let marca = req.params.marca;
         let productosFiltrados = productos.filter(producto => producto.animal == animal && producto.marca == marca);
         return res.json(productosFiltrados);
+    },
+    producto: (req, res) => {
+        let id = req.params.id;
+        let producto = productos.find(producto => producto.id == id);
+        return res.json(producto);
     }
 }
