@@ -2,11 +2,13 @@ const { readJSON, writeUsersJson} = require("../data");
 
 const productos = readJSON("productsDataBase.json");
 let comprados= [];
+let totalCompra = 0;
 
 module.exports = {
     ventas: (req, res) => {
         comprados = [];
-        res.render('venta',{comprados});
+        totalCompra = 0;
+        res.render('venta',{comprados,totalCompra});
     },
     carrito: (req, res) => {
         let id = req.body.producto;
@@ -24,11 +26,16 @@ module.exports = {
             tipo: tipo,
             total: total
         }
+        totalCompra = 0;
         comprados.push(comprado);
-        res.render('venta',{comprados});
+        comprados.forEach(comprado => {
+            totalCompra += +comprado.precio;
+        })
+        res.render('venta',{comprados, totalCompra});
     },
     comprar: (req, res) => {
         comprados = []
+        totalCompra = 0;
         res.redirect('/venta');
     },
     marcas: (req, res) => {
@@ -52,4 +59,15 @@ module.exports = {
         producto.precioKg = Math.floor(producto.precioKg/10)*10;
         return res.json(producto);
     },
+    delete: (req, res) => {
+        let id = req.params.id;
+        let producto = comprados.find(producto => producto.id == id);
+        let index = comprados.indexOf(producto);
+        comprados.splice(index, 1);
+        totalCompra = 0;
+        comprados.forEach(comprado => {
+            totalCompra += +comprado.precio;
+        })
+        res.render('venta',{comprados, totalCompra});
+    }
 }

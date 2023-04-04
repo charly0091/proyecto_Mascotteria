@@ -8,5 +8,6 @@ router.get("/productos/:animal/:marca", controller.productos);
 router.get("/producto/:id", controller.producto);
 router.post("/carrito", controller.carrito);
 router.post("/comprar", controller.comprar);
+router.delete("/eliminar/:id", controller.delete);
 
 module.exports = router;

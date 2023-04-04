@@ -10,7 +10,9 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 app.set('views', "./src/views");
 
-
+/* express override */
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 
 /* Routers */
 const mainRouter = require('./routes/main');

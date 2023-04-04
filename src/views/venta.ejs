@@ -46,7 +46,7 @@
             </div>
             <div class="mb-3 col-6">
                 <label for="cantidad" class="form-label">Cantidad</label>
-                <input type="number" class="form-control" id="cantidad" name="cantidad">
+                <input type="number" class="form-control" id="cantidad" name="cantidad" step="0.01">
             </div>
         </div>
         <div class="row">
@@ -89,8 +89,9 @@
                                   <td><%= comprados[i].producto %></td>
                                   <td>$ <%= comprados[i].precio %></td>
                                   <td>
-                                      <a href="/productos/editar/<%= comprados[i].id %>" class="btn btn-warning">Editar</a>
-                                      <a href="/productos/eliminar/<%= comprados[i].id %>" class="btn btn-danger">Eliminar</a>
+                                    <form action="/venta/eliminar/<%= comprados[i].id %>?_method=DELETE" method="POST">
+                                        <button type="submit" class="btn btn-primary">Eliminar</button>
+                                    </form>
                                   </td>
                               </tr>
                           <% } %>
@@ -102,7 +103,7 @@
     <div class="my-5">
       <h3>Carrito de compras</h3>
       <ul id="cart-items"></ul>
-      <p>Total: $<span id="cart-total">0</span></p>
+      <p>Total: $<span id="cart-total"><%= totalCompra %></span></p>
       <form action="/venta/comprar" method="POST">
           <button id="checkout" class="btn btn-success">Realizar compra</button>
       </form>

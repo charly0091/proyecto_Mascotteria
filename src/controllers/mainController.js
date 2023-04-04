@@ -15,4 +15,5 @@ module.exports = {
     create: (req, res) => {
         res.render('product-create-form', {productos});
     },
+    
 }

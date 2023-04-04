@@ -13,6 +13,7 @@ productos.addEventListener("change", function(event){
             if(tipoInput.value == "suelto"){
                 precioInput.addEventListener("change", function(event){
                     cantidadInput.value = event.target.value / data.precioKg;
+                    cantidadInput.value = parseFloat(cantidadInput.value).toFixed(2);
                 })
                 cantidadInput.addEventListener("change", function(event){
                     precioInput.value = event.target.value * data.precioKg;
@@ -20,6 +21,7 @@ productos.addEventListener("change", function(event){
             } else if(tipoInput.value == "bolsa") {
                 precioInput.addEventListener("change", function(event){
                     cantidadInput.value = event.target.value / data.precioBolsa;
+                    cantidadInput.value = parseFloat(cantidadInput.value).toFixed(2);
                 })
                 cantidadInput.addEventListener("change", function(event){
                     precioInput.value = event.target.value * data.precioBolsa;
