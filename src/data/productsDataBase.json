@@ -1,72 +1,676 @@
 [
-    {
-        "id": 1,
-        "marca": "Agility",
-        "animal": "Gato",
-        "producto": "Kitten",
-        "pesoBolsa": 10,
-        "precio": 1000, 
-        "stockBolsa": 10,
-        "stockSuelto": 10
-    },
-    {
-        "id": 2,
-        "marca": "Agility",
-        "animal": "Gato",
-        "producto": "Adulto",
-        "pesoBolsa": 10,
-        "precio": 1000, 
-        "stockBolsa": 10,
-        "stockSuelto": 10
-    },
-    {
-        "id": 3,
-        "marca": "Agility",
-        "animal": "Gato",
-        "producto": "Urinary",
-        "pesoBolsa": 10,
-        "precio": 1000, 
-        "stockBolsa": 10,
-        "stockSuelto": 10
-    },
-    {
-        "id": 4,
-        "marca": "Agility",
-        "animal": "Gato",
-        "producto": "Reduccion de peso",
-        "pesoBolsa": 10,
-        "precio": 1000, 
-        "stockBolsa": 10,
-        "stockSuelto": 10
-    },
-    {
-        "id": 5,
-        "marca": "Cat Chow",
-        "animal": "Gato",
-        "producto": "Gatitos Carne y Pollo",
-        "pesoBolsa": 8,
-        "precio": 1000, 
-        "stockBolsa": 10,
-        "stockSuelto": 10
-    },
-    {
-        "id": 6,
-        "marca": "Cat Chow",
-        "animal": "Gato",
-        "producto": "Adulto Carne y Pollo",
-        "pesoBolsa": 15,
-        "precio": 1000, 
-        "stockBolsa": 10,
-        "stockSuelto": 10
-    },
-    {
-        "id": 7,
-        "marca": "Cat Chow",
-        "animal": "Gato",
-        "producto": "Adulto Pescado y Pollo",
-        "pesoBolsa": 15,
-        "precio": 1000, 
-        "stockBolsa": 10,
-        "stockSuelto": 10
-    }
+  {
+    "id": 1,
+    "marca": "Agility",
+    "animal": "Gato",
+    "producto": "Kitten",
+    "pesoBolsa": 10,
+    "precio": 1000,
+    "stockBolsa": 8,
+    "stockSuelto": 8,
+    "precioBolsa": 1300,
+    "precioKg": 140
+  },
+  {
+    "id": 2,
+    "marca": "Agility",
+    "animal": "Gato",
+    "producto": "Adulto",
+    "pesoBolsa": 10,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 3,
+    "marca": "Agility",
+    "animal": "Gato",
+    "producto": "Urinary",
+    "pesoBolsa": 10,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 4,
+    "marca": "Agility",
+    "animal": "Gato",
+    "producto": "Reduccion de peso",
+    "pesoBolsa": 10,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 5,
+    "marca": "Cat Chow",
+    "animal": "Gato",
+    "producto": "Gatitos Carne y Pollo",
+    "pesoBolsa": 8,
+    "precio": 1000,
+    "stockBolsa": 9,
+    "stockSuelto": 10,
+    "precioBolsa": 1300,
+    "precioKg": 170
+  },
+  {
+    "id": 6,
+    "marca": "Cat Chow",
+    "animal": "Gato",
+    "producto": "Adulto Carne y Pollo",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 7,
+    "marca": "Cat Chow",
+    "animal": "Gato",
+    "producto": "Adulto Pescado y Pollo",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 8,
+    "marca": "Excellent",
+    "animal": "Gato",
+    "producto": "Kitten",
+    "pesoBolsa": 7.5,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 9,
+    "marca": "Excellent",
+    "animal": "Gato",
+    "producto": "Adulto 7,5",
+    "pesoBolsa": 7.5,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 10,
+    "marca": "Excellent",
+    "animal": "Gato",
+    "producto": "Adulto 15",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 11,
+    "marca": "Excellent",
+    "animal": "Gato",
+    "producto": "Urinary",
+    "pesoBolsa": 7.5,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 12,
+    "marca": "royal Canin",
+    "animal": "Gato",
+    "producto": "Fit-32",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 13,
+    "marca": "Infinity",
+    "animal": "Gato",
+    "producto": "Adulto",
+    "pesoBolsa": 10,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 14,
+    "marca": "Old Prince",
+    "animal": "Gato",
+    "producto": "Adulto",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 15,
+    "marca": "Optimum",
+    "animal": "Gato",
+    "producto": "Adulto",
+    "pesoBolsa": 10,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 16,
+    "marca": "Royal Canin",
+    "animal": "Gato",
+    "producto": "Reduccion de peso",
+    "pesoBolsa": 7.5,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 17,
+    "marca": "Sabrositos",
+    "animal": "Gato",
+    "producto": "Mix Carne, verduras y vegetales",
+    "pesoBolsa": 10,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 18,
+    "marca": "Vital Can",
+    "animal": "Gato",
+    "producto": "Kitten",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 19,
+    "marca": "Vital Can",
+    "animal": "Gato",
+    "producto": "Complete Adulto",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 20,
+    "marca": "Vital Can",
+    "animal": "Gato",
+    "producto": "Balanced Adulto",
+    "pesoBolsa": 7.5,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 21,
+    "marca": "Vital Can",
+    "animal": "Gato",
+    "producto": "PH control",
+    "pesoBolsa": 7.5,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 22,
+    "marca": "Nutribon",
+    "animal": "Gato",
+    "producto": "XQ Adulto",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 23,
+    "marca": "Nutribon",
+    "animal": "Gato",
+    "producto": "XQ Gatito",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 24,
+    "marca": "Ultramix",
+    "animal": "Gato",
+    "producto": "Adulto",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 25,
+    "marca": "Pro Plan",
+    "animal": "Gato",
+    "producto": "Urinario",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 26,
+    "marca": "Agility",
+    "animal": "Perro",
+    "producto": "Adulto",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 27,
+    "marca": "Pro Plan",
+    "animal": "Gato",
+    "producto": "Urinario",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 28,
+    "marca": "Agility",
+    "animal": "Perro",
+    "producto": "Cachorrol",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 29,
+    "marca": "Agility",
+    "animal": "Perro",
+    "producto": "Adulto Raza Pequeña",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 30,
+    "marca": "Agility",
+    "animal": "Perro",
+    "producto": "Derma Control",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 31,
+    "marca": "Bio Pet",
+    "animal": "Perro",
+    "producto": "Adulto",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 32,
+    "marca": "Bio Pet",
+    "animal": "Perro",
+    "producto": "Cachorro",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 33,
+    "marca": "Bio Pet",
+    "animal": "Perro",
+    "producto": "Adulto Raza Pequeña",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 34,
+    "marca": "Total Balanced",
+    "animal": "Perro",
+    "producto": "Adulto",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 35,
+    "marca": "Duo Can",
+    "animal": "Perro",
+    "producto": "Adulto",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 36,
+    "marca": "Duo Can",
+    "animal": "Perro",
+    "producto": "Adulto Mordida Pequeña",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 37,
+    "marca": "Duo Can",
+    "animal": "Perro",
+    "producto": "Cachorro",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 38,
+    "marca": "Excellent",
+    "animal": "Perro",
+    "producto": "Reduccion de calorias",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 39,
+    "marca": "Excellent",
+    "animal": "Perro",
+    "producto": "Adulto",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 40,
+    "marca": "Estampa",
+    "animal": "Perro",
+    "producto": "Criadores",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 41,
+    "marca": "Estampa",
+    "animal": "Perro",
+    "producto": "Plus",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 42,
+    "marca": "Gooster",
+    "animal": "Perro",
+    "producto": "Adulto",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 43,
+    "marca": "Gooster",
+    "animal": "Perro",
+    "producto": "Cachorro",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 44,
+    "marca": "Old Prince",
+    "animal": "Perro",
+    "producto": "Cordero Mordida Mediana",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 45,
+    "marca": "Old Prince",
+    "animal": "Perro",
+    "producto": "Cordero Mordida Pequeña",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 46,
+    "marca": "Old Prince",
+    "animal": "Perro",
+    "producto": "Cerdo",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 47,
+    "marca": "Optimum",
+    "animal": "Perro",
+    "producto": "Adulto Mordida Pequeña",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 48,
+    "marca": "Optimum",
+    "animal": "Perro",
+    "producto": "Adulto",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 49,
+    "marca": "Optimum",
+    "animal": "Perro",
+    "producto": "Cachorro",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 50,
+    "marca": "Royal Canin",
+    "animal": "Perro",
+    "producto": "Mini Adulto",
+    "pesoBolsa": 7.5,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 51,
+    "marca": "Sieger",
+    "animal": "Perro",
+    "producto": "Criadores",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 52,
+    "marca": "Sieger",
+    "animal": "Perro",
+    "producto": "Adulto",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 53,
+    "marca": "Sieger",
+    "animal": "Perro",
+    "producto": "Cachorro",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 54,
+    "marca": "Sieger",
+    "animal": "Perro",
+    "producto": "Cachorro Mordida Pequeña",
+    "pesoBolsa": 12,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 55,
+    "marca": "Sieger",
+    "animal": "Perro",
+    "producto": "Adulto Mordida Pequeña",
+    "pesoBolsa": 12,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 56,
+    "marca": "Sieger",
+    "animal": "Perro",
+    "producto": "Senior",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 57,
+    "marca": "Sieger",
+    "animal": "Perro",
+    "producto": "Derma Protect",
+    "pesoBolsa": 12,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 58,
+    "marca": "Walt Can",
+    "animal": "Perro",
+    "producto": "Adulto",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 59,
+    "marca": "Pedigree",
+    "animal": "Perro",
+    "producto": "Adulto",
+    "pesoBolsa": 21,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 60,
+    "marca": "Pedigree",
+    "animal": "Perro",
+    "producto": "Cachorro",
+    "pesoBolsa": 21,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 61,
+    "marca": "Pedigree",
+    "animal": "Perro",
+    "producto": "Adulto Mordida Pequeña",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 62,
+    "marca": "Pedigree",
+    "animal": "Perro",
+    "producto": "High Protein",
+    "pesoBolsa": 21,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 63,
+    "marca": "ProVet",
+    "animal": "Perro",
+    "producto": "Baja Calorias",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 64,
+    "marca": "Performance",
+    "animal": "Perro",
+    "producto": "Adulto",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 65,
+    "marca": "Pro Plan",
+    "animal": "Perro",
+    "producto": "Adulto Mordida Pequeña",
+    "pesoBolsa": 15,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 66,
+    "marca": "Vital Can",
+    "animal": "Perro",
+    "producto": "Premium Adulto",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  },
+  {
+    "id": 67,
+    "marca": "Vital Can",
+    "animal": "Perro",
+    "producto": "Complete Cachorro",
+    "pesoBolsa": 20,
+    "precio": 1000,
+    "stockBolsa": 10,
+    "stockSuelto": 10
+  }
 ]

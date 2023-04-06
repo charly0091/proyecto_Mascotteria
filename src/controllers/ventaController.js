@@ -1,7 +1,8 @@
-const { readJSON, writeUsersJson} = require("../data");
+const { readJSON, writeJSON} = require("../data");
 
 const productos = readJSON("productsDataBase.json");
 let comprados= [];
+let ventas = readJSON("ventasDataBase.json");
 let totalCompra = 0;
 
 module.exports = {
@@ -34,6 +35,35 @@ module.exports = {
         res.render('venta',{comprados, totalCompra});
     },
     comprar: (req, res) => {
+        comprados.forEach(comprado => {
+            let venta = {
+                id: comprado.id,
+                producto: comprado.producto,
+                marca: comprado.marca,
+                cantidad: comprado.cantidad,
+                precio: comprado.precio,
+                tipo: comprado.tipo,
+                total: comprado.total,
+                fecha: new Date()
+            }
+            ventas.push(venta);
+        })
+        writeJSON("ventasDataBase.json", ventas);
+        comprados.forEach(comprado => {
+            let producto = productos.find(producto => producto.id == comprado.id);
+            let index = productos.indexOf(producto);
+            if (comprado.tipo == "bolsa") {
+                producto.stockBolsa -= comprado.cantidad;
+            } else if(comprado.tipo == "suelto") {
+                producto.stockSuelto -= comprado.cantidad;
+            }
+            if(producto.stockSuelto < 0) {
+                producto.stockSuelto += producto.pesoBolsa;
+                producto.stockBolsa -= 1;
+            }
+            productos.splice(index, 1, producto);
+        })
+        writeJSON("productsDataBase.json", productos);
         comprados = []
         totalCompra = 0;
         res.redirect('/venta');

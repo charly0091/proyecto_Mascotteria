@@ -1,0 +1,80 @@
+[
+  {
+    "id": "19",
+    "producto": "Complete Adulto",
+    "marca": "Vital Can",
+    "cantidad": "1",
+    "precio": "90",
+    "tipo": "suelto",
+    "total": 90
+  },
+  {
+    "id": "41",
+    "producto": "Plus",
+    "marca": "Estampa",
+    "cantidad": "3",
+    "precio": "210",
+    "tipo": "suelto",
+    "total": 630
+  },
+  {
+    "id": "1",
+    "producto": "Kitten",
+    "marca": "Agility",
+    "cantidad": "1",
+    "precio": "140",
+    "tipo": "suelto",
+    "total": 140,
+    "fecha": "2023-04-06T15:22:54.314Z"
+  },
+  {
+    "id": "5",
+    "producto": "Gatitos Carne y Pollo",
+    "marca": "Cat Chow",
+    "cantidad": "1",
+    "precio": "170",
+    "tipo": "suelto",
+    "total": 170,
+    "fecha": "2023-04-06T15:46:38.755Z"
+  },
+  {
+    "id": "1",
+    "producto": "Kitten",
+    "marca": "Agility",
+    "cantidad": "12",
+    "precio": "15600",
+    "tipo": "bolsa",
+    "total": 187200,
+    "fecha": "2023-04-06T15:49:14.297Z"
+  },
+  {
+    "id": "5",
+    "producto": "Gatitos Carne y Pollo",
+    "marca": "Cat Chow",
+    "cantidad": "1",
+    "precio": "1300",
+    "tipo": "bolsa",
+    "total": 1300,
+    "fecha": "2023-04-06T16:54:02.882Z"
+  },
+  {
+    "id": "1",
+    "producto": "Kitten",
+    "marca": "Agility",
+    "cantidad": "30",
+    "precio": "4200",
+    "tipo": "suelto",
+    "total": 126000,
+    "fecha": "2023-04-06T16:54:02.882Z"
+  },
+  {
+    "id": "1",
+    "producto": "Kitten",
+    "marca": "Agility",
+    "cantidad": "12",
+    "precio": "1680",
+    "tipo": "suelto",
+    "total": 20160,
+    "fecha": "2023-04-06T16:56:27.316Z"
+  }
+]

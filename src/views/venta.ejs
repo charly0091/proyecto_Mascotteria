@@ -40,10 +40,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="mb-3 col-6">
-                <label for="fecha" class="form-label">Fecha</label>
-                <input type="date" class="form-control" id="fecha" name="fecha">
-            </div>
+            
             <div class="mb-3 col-6">
                 <label for="cantidad" class="form-label">Cantidad</label>
                 <input type="number" class="form-control" id="cantidad" name="cantidad" step="0.01">
@@ -101,12 +98,20 @@
           </div>
       </div>
     <div class="my-5">
-      <h3>Carrito de compras</h3>
-      <ul id="cart-items"></ul>
-      <p>Total: $<span id="cart-total"><%= totalCompra %></span></p>
-      <form action="/venta/comprar" method="POST">
-          <button id="checkout" class="btn btn-success">Realizar compra</button>
-      </form>
+        <h3>Carrito de compras</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total"><%= totalCompra %></span></p>
+        <form action="/venta/comprar" method="POST">
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <button id="checkout" class="btn btn-success">Realizar compra</button>
+                </div>
+                <div class="mb-3 col-6">
+                    <label for="fecha" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="fecha" name="fecha">
+                </div>
+            </div>
+        </form>
     </div>
 </div>
     <script src="/js/menuMarca.js"></script>
