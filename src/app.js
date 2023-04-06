@@ -15,11 +15,13 @@ const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 
 /* Routers */
+const adminRouter = require('./routes/crud.js');
 const mainRouter = require('./routes/main');
 const ventaRouter = require('./routes/venta.js');
 
 /* Routers Middlewares */
 app.use('/', mainRouter);
+app.use('/crud', adminRouter);
 app.use('/venta', ventaRouter);
 
 app.listen(port, () => {

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head") %>
+<body>
+    <%- include("./partials/navbar") %>
+
+    <!-- crear producto en base de datos -->
+    <form action="/producto/crear" method="POST">
+    <div class="container">
+        <div class="row">
+            <h1>Crear producto</h1>
+            <div class="mb-3 col-6 ">
+                <label for="producto" class="form-label">Marca</label>
+                <input type="text" class="form-control" id="marca" name="marca">
+            </div>
+            <div class="mb-3 col-6 ">
+                <label for="nombre" class="form-label">Producto</label>
+                <input type="text" class="form-control" id="producto" name="producto">
+            </div>
+        </div>
+        <div class="row ">
+            <div class="mb-3 col-6" >
+                <label for="categoria" class="form-label">Categoria</label>
+                <select class="form-select " aria-label="Default select example" name="categoria" id="categoria">
+                    <option selected>Seleccionar categoria</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Perro">Perro</option>
+                </select>
+            </div>
+            <div class="mb-3 col-6">
+                <label for="cantidad" class="form-label">Peso Bolsa</label>
+                <input type="number" class="form-control" id="pesoBolsa" name="pesoBolsa" step="0.01">
+            </div>
+        </div>
+        <div class="row">
+            
+            
+            <div class="mb-3 col-6">
+                <label for="precio" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="precio" name="precio">
+            </div>
+           
+            
+        </div>
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="precio" class="form-label">Stock Bolsa</label>
+                <input type="number" class="form-control" id="stockBolsa" name="stockBolsa">
+            </div>
+            <div class="mb-3 col-6">
+                <label for="precio" class="form-label">Stock Suelto</label>
+                <input type="number" class="form-control" id="stockSuelto" name="stockSuelto">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="precio" class="form-label">Porcentaje ganancia Bolsa</label>
+                <input type="number" class="form-control" id="gananciaBolsa" name="gananciaBolsa">
+            </div>
+            <div class="mb-3 col-6">
+                <label for="precio" class="form-label">Porcentaje ganancia Suelto</label>
+                <input type="number" class="form-control" id="gananciaSuelto" name="gananciaSuelto">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-6">
+                <button type="submit" class="btn btn-primary">Crear</button>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
