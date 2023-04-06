@@ -76,5 +76,46 @@
     "tipo": "suelto",
     "total": 20160,
     "fecha": "2023-04-06T16:56:27.316Z"
+  },
+  {
+    "id": "6",
+    "producto": "Adulto Carne y Pollo",
+    "marca": "Cat Chow",
+    "cantidad": "1",
+    "precio": "1300",
+    "tipo": "bolsa",
+    "total": 1300,
+    "fecha": "2023-04-06T17:50:00.263Z"
+  },
+  {
+    "id": "10",
+    "producto": "Adulto 15",
+    "marca": "Excellent",
+    "cantidad": "2",
+    "precio": "180",
+    "tipo": "suelto",
+    "total": 360,
+    "fecha": "2023-04-06T18:06:58.854Z"
+  },
+  {
+    "id": "32",
+    "producto": "Cachorro",
+    "marca": "Bio Pet",
+    "cantidad": "1.08",
+    "precio": "1400",
+    "tipo": "bolsa",
+    "total": 1512,
+    "fecha": "2023-04-06T18:08:17.373Z"
+  },
+  {
+    "id": "2",
+    "producto": "Adulto",
+    "marca": "Agility",
+    "cantidad": "213",
+    "precio": "29820",
+    "tipo": "suelto",
+    "total": 6351660,
+    "fecha": "2023-04-06T18:10:51.957Z",
+    "metodoPago": "tarjeta"
   }
 ]

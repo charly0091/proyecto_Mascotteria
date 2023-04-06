@@ -25,7 +25,8 @@ module.exports = {
             cantidad: cantidad,
             precio: precio,
             tipo: tipo,
-            total: total
+            total: total,
+            metodoPago: req.body.metodo
         }
         totalCompra = 0;
         comprados.push(comprado);
@@ -44,7 +45,8 @@ module.exports = {
                 precio: comprado.precio,
                 tipo: comprado.tipo,
                 total: comprado.total,
-                fecha: new Date()
+                fecha: new Date(),
+                metodoPago: comprado.metodoPago
             }
             ventas.push(venta);
         })

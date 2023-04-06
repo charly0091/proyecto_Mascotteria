@@ -18,8 +18,10 @@
     "producto": "Adulto",
     "pesoBolsa": 10,
     "precio": 1000,
-    "stockBolsa": 10,
-    "stockSuelto": 10
+    "stockBolsa": 9,
+    "stockSuelto": 10,
+    "precioBolsa": 1300,
+    "precioKg": 140
   },
   {
     "id": 3,
@@ -60,8 +62,10 @@
     "producto": "Adulto Carne y Pollo",
     "pesoBolsa": 15,
     "precio": 1000,
-    "stockBolsa": 10,
-    "stockSuelto": 10
+    "stockBolsa": 9,
+    "stockSuelto": 10,
+    "precioBolsa": 1300,
+    "precioKg": 90
   },
   {
     "id": 7,
@@ -91,7 +95,9 @@
     "pesoBolsa": 7.5,
     "precio": 1000,
     "stockBolsa": 10,
-    "stockSuelto": 10
+    "stockSuelto": 10,
+    "precioBolsa": 1300,
+    "precioKg": 180
   },
   {
     "id": 10,
@@ -101,7 +107,9 @@
     "pesoBolsa": 15,
     "precio": 1000,
     "stockBolsa": 10,
-    "stockSuelto": 10
+    "stockSuelto": 8,
+    "precioBolsa": 1300,
+    "precioKg": 90
   },
   {
     "id": 11,
@@ -320,8 +328,10 @@
     "producto": "Cachorro",
     "pesoBolsa": 15,
     "precio": 1000,
-    "stockBolsa": 10,
-    "stockSuelto": 10
+    "stockBolsa": 8.92,
+    "stockSuelto": 10,
+    "precioBolsa": 1300,
+    "precioKg": 90
   },
   {
     "id": 33,
